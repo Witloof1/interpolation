@@ -28,7 +28,7 @@ float lerp(const sf::Vector2f& p1, const sf::Vector2f& p2, float x)
 // linear interpolation
 float lerp2(const sf::Vector2f& p1, const sf::Vector2f& p2, float x)
 {
-	// This method expects (int)x to be the index in the array of points.
+	// This method expects a ∈ [0, 1]
 	x /= nSCALE;
 
 	float a = x - (int)x;
@@ -39,7 +39,7 @@ float lerp2(const sf::Vector2f& p1, const sf::Vector2f& p2, float x)
 // cosine interpolation
 float cerp(const sf::Vector2f& p1, const sf::Vector2f& p2, float x)
 {
-	// This method expects (int)x to be the index in the array of points.
+	// This method expects a ∈ [0, 1]
 	x /= nSCALE;
 
 	float a = x - (int)x;
